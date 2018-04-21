@@ -72,6 +72,8 @@ export default class MapWithClustering extends Component {
         maxZoom: 20,
         minZoom: 1,
       });
+
+      GLOBAL.superCluster = this.superCluster
     }
     this.superCluster.load(markers);
 
